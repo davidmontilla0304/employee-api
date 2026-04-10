@@ -1,0 +1,47 @@
+{
+  "info": {
+    "_postman_id": "e97eeb53-9ec3-4041-be9d-095bbe9682c3",
+    "name": "Employee API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53774372",
+    "_collection_link": "https://go.postman.co/collection/53774372-e97eeb53-9ec3-4041-be9d-095bbe9682c3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register Employee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"mola\",\r\n  \"documentType\": \"CC\",\r\n  \"documentNumber\": \"12333339\",\r\n  \"birthDate\": \"10-05-2000\",\r\n  \"hireDate\": \"2020-01-15\",\r\n  \"position\": \"Developer\",\r\n  \"salary\": 2500000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employee/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
